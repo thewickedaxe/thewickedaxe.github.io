@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <title>Srinivas!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/stylesheets/bootstrap.min.css">    
+    <script src="../assets/javascripts/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container" align="center">
+        <div class="header clearfix">
+          <nav class="navbar navbar-inverse">
+         <a href="/" class="pull-left"><img src="http://res.cloudinary.com/cowboy/image/upload/v1463866050/cooltext184539561114596_fojicz.png"></a>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">Musing on Technology and Everyday Happenings</a>
+        </div>
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation"><%= link_to 'Home', root_path %></li>
+              <li role="presentation"><%= link_to 'About', about_path %></li>
+              <li role="presentation" class="active"><%= link_to 'Contact', contact_path %></li>
+            </ul>
+          </nav>
+      </div>
+
+	  <% flash.each do |key, value| %>	        
+	    	<% if @success %>
+ 				<div class="alert alert-success">
+			<% else %>
+ 				<div class="alert alert-danger">
+			<% end %>	        	
+	        	<%= value %>
+	       		</div>
+	    </div>
+	  <% end %>
+	  <div class="container" align="center">
+      <footer class="footer">
+          <p>&copy; 2016 Srini Suresh</p>
+        </footer>
+        </div>
+    </div> <!-- /container -->
+  </body>
+</html>
