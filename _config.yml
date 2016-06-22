@@ -1,0 +1,25 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Srinivas
+email: ssures11@jhu.edu
+
+#write html inside the double quotes to display in jumbotron
+description: "<h1>Srini's DevJournal</h1><h3>My take on Technology, Life and everyday musings</h3>"
+
+
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://thewickedaxe.github.io" # the base hostname & protocol for your site
+twitter_username: thewickedaxe
+github_username:  thewickedaxe
+facebook_username:  srinivas.suresh
+linkedin_username:  srinivas-suresh-b07a9286
+
+# Build settings
+markdown: kramdown
