@@ -12,7 +12,7 @@ permalink: /about/
 Holidaying in Vietnam.. it's a lot harder than it looks
 <br/>
 <br/>
-My name is Srinivas, I am a current Masters student of Computer Science at The Johns Hopkins in Baltimore, Maryland. I like hacking away at things and love exeperimenting with new technology. I love Android and regulary build the master branch and flash it on to my, now dying, Nexus 5. I also like Linux and I just completed the Linux rite of passage by building Linux from Scratch. I like the clicking sound of mechanical keyboards and old time RTS games.
+My name is Srinivas, I am a current Masters student of Computer Science at The Johns Hopkins in Baltimore, Maryland. I like hacking away at things and love experimenting with new technology. I love Android and regulary build the master branch and flash it on to my, now dying, Nexus 5. I also like Linux and I just completed the Linux rite of passage by building Linux from Scratch. I like the clicking sound of mechanical keyboards and old time RTS games.
 <br/>
 <br/>  
     <a href="https://www.facebook.com/{{ site.facebook_username }}">
