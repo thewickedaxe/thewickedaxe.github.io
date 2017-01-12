@@ -5,8 +5,8 @@
     <description>&lt;h1&gt;Srini&#39;s DevJournal&lt;/h1&gt;&lt;h3&gt;My take on Technology, Life and Everyday Musings&lt;/h3&gt;</description>
     <link>http://thewickedaxe.github.io/thewickedaxe.github.io/</link>
     <atom:link href="http://thewickedaxe.github.io/thewickedaxe.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Jan 2017 12:05:51 +0530</pubDate>
-    <lastBuildDate>Thu, 12 Jan 2017 12:05:51 +0530</lastBuildDate>
+    <pubDate>Thu, 12 Jan 2017 20:43:52 +0530</pubDate>
+    <lastBuildDate>Thu, 12 Jan 2017 20:43:52 +0530</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -89,6 +89,89 @@ sudo sh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh
         <pubDate>Thu, 12 Jan 2017 00:00:00 +0530</pubDate>
         <link>http://thewickedaxe.github.io/thewickedaxe.github.io/2017/01/12/Getting-Ubuntu-set-up-just-the-way-I-like-it.html</link>
         <guid isPermaLink="true">http://thewickedaxe.github.io/thewickedaxe.github.io/2017/01/12/Getting-Ubuntu-set-up-just-the-way-I-like-it.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Knee deep in the deep web</title>
+        <description>&lt;p&gt;For those of you who do not know that the deep web is I will offer a short, but a wee bit incorrect, explanation of what it is.
+There exists a portion of the Internet that is not indexed by any search engine like Google. These websites can only be accessed if you have a URL(link)
+to access them. In addition a large portion of these websites restrict traffic that to do not originate from computers that do not identify themselves in a certain way.
+These computers constitute what is called “the onion network” and they use TOR (former acronym for &lt;strong&gt;T&lt;/strong&gt;he &lt;strong&gt;O&lt;/strong&gt;nion &lt;strong&gt;R&lt;/strong&gt;outing) software to access other peers and bridges on 
+this network.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-to-access-the-deep-web&quot;&gt;How to access the deep web&lt;/h1&gt;
+
+&lt;h3 id=&quot;step-1-downloading-qemu-and-tails&quot;&gt;Step 1: Downloading qemu and tails&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Before you tell me that you don&#39;t need either of things,
+I feel it would be egregious to not direct people to use the deep web with maximum anonymity
+How ever if you prefer to run tor on your host system then just skip to the next step
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Get &lt;a href=&quot;http://wiki.qemu.org/Download&quot;&gt;Qemu&lt;/a&gt; and &lt;a href=&quot;https://tails.boum.org/install/download/&quot;&gt;Tails&lt;/a&gt;. Qemu is something like virtual box that is used to in our case to launch the tails .iso.
+Once you install qemu the right way for your operating system and have it on your system path, open a terminal session in the same folder as the tails .iso and run&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu-system-i386 -enable-kvm -m 1024 -cdrom tails-i386-2.9.1.iso
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, this assumes you have atleast 1Gb of RAM to spare. If you don’t have KVM things are gonna be a lot slower for you.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2-using-the-tor-browser-bundle&quot;&gt;Step 2: Using the tor browser bundle&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Now tails comes with bundle installed by default. For those of you who skipped to this step straight away, get the tor bundle &lt;a href=&quot;https://www.torproject.org/download/download&quot;&gt;here&lt;/a&gt;.
+Launch the tor browser from the applications tab on tails once it boots and you finish the initial login stuff, and by directly clicking the tor browser button if you downloaded the tor bundle
+standalone.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3-hitting-the-deep-web&quot;&gt;Step 3: Hitting the deep web&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;CAVEAT: THE DEEP WEB HAS A LOT OF ADULT, ILLEGAL AND OUTRIGHT SPOOKY STUFF, BROWSE AT YOUR OWN RISK&lt;/strong&gt;&lt;br /&gt;
+Navigate to &lt;a href=&quot;https://zqktlwi4fecvo6ri.onion.to/wiki/index.php/Main_Page&quot;&gt;The Hidden Wiki&lt;/a&gt; -&amp;gt; clearnet visible onion link. This the part I lied about earlier. Engines like DuckDuckGo do index the deep web, just not very well.
+This page is called the hidden wiki because it is an info dump of various deep web services and serves as an introduction point to these services. It is also hme to several interesting and poignant
+articles on anonymity.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;There exists and uncensored hidden wiki, but I will not link to that because of the nature of the content there&lt;/em&gt;
+&lt;br /&gt;&lt;img src=&quot;/thewickedaxe.github.io/images/hiddenwik.png&quot; alt=&quot;Hiddenwiki&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;final-step-4-peeling-the-onion&quot;&gt;Final Step 4: Peeling the onion&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Markets
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Checkout the deepweb markets. You can find a ton of cool stuff for sale, in addition to contraband substances which I do not endorse or recommend&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Books and Manuals
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Granted you’ll find a lot of manuals about stuff you’re not supposed to see but stuff like the Jotun Library and Liberated Books have some rare gems&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Look at Hacktivism and Political Whistleblowing
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Know about stuff before CNN talks about it. Learn about internet activism and Freedom of Information&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Image and Message Boards
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Meet like minded people and other curious explorers like you on the deep web’s version of 4chan and Reddit&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt; This concludes this very rudimentary introduction to the deep web. :)&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 12 Jan 2017 00:00:00 +0530</pubDate>
+        <link>http://thewickedaxe.github.io/thewickedaxe.github.io/2017/01/12/Cool-stuff-to-do-on-the-deep-web-and-a-primer-on-how-to-connect.html</link>
+        <guid isPermaLink="true">http://thewickedaxe.github.io/thewickedaxe.github.io/2017/01/12/Cool-stuff-to-do-on-the-deep-web-and-a-primer-on-how-to-connect.html</guid>
         
         
       </item>
