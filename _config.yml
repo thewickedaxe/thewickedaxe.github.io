@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Srinivas
+title: Welcome to my infrequent technology musings!
 email: ssures11@jhu.edu
 
 #write html inside the double quotes to display in jumbotron
@@ -14,7 +14,7 @@ description: "<h1>Srini's DevJournal</h1><h3>My take on Technology, Life and Eve
 
 
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/thewickedaxe.github.io" # the subpath of your site, e.g. /blog
 url: "http://thewickedaxe.github.io" # the base hostname & protocol for your site
 twitter_username: thewickedaxe
 github_username:  thewickedaxe

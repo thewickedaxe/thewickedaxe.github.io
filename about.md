@@ -53,11 +53,12 @@ My favorite scripting language.
 <img src="/images/git.png" style="max-width:200px;" style="max-height:200px;"/>
 Version Control for the masses
 <br/>
-<img src="/images/subl.png" style="max-width:200px;" style="max-height:200px;"/>
-My favorite Text Editor
+<img src="/images/vscode.png" style="max-width:200px;" style="max-height:200px;"/>
+Visual Studio Code replaced Sublime Text as my favorite text editr, it is better in every way!
 <br/>
 <img src="/images/zsh.jpg" style="max-width:200px;" style="max-height:200px;"/>
 ZSH super charged!
+<br/>
 <br/>
 <img src="/images/ubuntu.jpg" style="max-width:200px;" style="max-height:200px;"/>
 It's really hard not to like Ubuntu

@@ -1,13 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Srinivas</title>
-    <description>&lt;h1&gt;Srini&#39;s DevJournal&lt;/h1&gt;&lt;h3&gt;My take on Technology, Life and everyday musings&lt;/h3&gt;</description>
-    <link>http://thewickedaxe.github.io/</link>
-    <atom:link href="http://thewickedaxe.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 Jun 2016 14:35:42 -0400</pubDate>
-    <lastBuildDate>Wed, 22 Jun 2016 14:35:42 -0400</lastBuildDate>
+    <title>Welcome to my infrequent technology musings!</title>
+    <description>&lt;h1&gt;Srini&#39;s DevJournal&lt;/h1&gt;&lt;h3&gt;My take on Technology, Life and Everyday Musings&lt;/h3&gt;</description>
+    <link>http://thewickedaxe.github.io/thewickedaxe.github.io/</link>
+    <atom:link href="http://thewickedaxe.github.io/thewickedaxe.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 12 Jan 2017 12:05:51 +0530</pubDate>
+    <lastBuildDate>Thu, 12 Jan 2017 12:05:51 +0530</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Things I do first on a fresh Ubuntu installation</title>
+        <description>&lt;p&gt;You might at this juncture ask me how often I install a new operating system on a computer. The answer is not all that often after I quit my job.
+But the contents of this post are more of a general guideline on what productivity, development and performance tools I like to have on my system.&lt;/p&gt;
+
+&lt;h2 id=&quot;install-a-development-stack-to-make-the-mac-stack-look-like-a-sandbox&quot;&gt;Install a development stack to make the Mac stack look like a sandbox&lt;/h2&gt;
+&lt;p&gt;Ruby with an RVM&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;\curl -sSL https://get.rvm.io | bash -s stable --ruby 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Anaconda for Python2.7 (use sudo as required) - installs pandas, scipy, numpy, ipynb etc.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh
+bash Anaconda2-4.2.0-Linux-x86_64.sh 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Mysql&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install mysql-server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;FFmpeg and SoX (not strictly dev tools but useful command line utilities)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;FFmpeg: https://johnvansickle.com/ffmpeg/ and Sox: https://sourceforge.net/projects/sox/files/sox/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The latest Java (will preclude Android development)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo add-apt-repository ppa:webupd8team/java
+sudo apt update; sudo apt install oracle-java9-installer
+sudo apt install oracle-java9-set-default
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Tmux&lt;br /&gt;
+If you dont’t use tmux already get it and use it. Your life will be better.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install Tmux
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The Silver Searcher&lt;br /&gt;
+Grep is great, but ag is faster for larger codebases&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install silversearcher-ag
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Tig, the console UI for git&lt;br /&gt;
+Some people prefer a UI for git&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://jonas.github.io/tig/INSTALL.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Change the shell to zsh and install Oh-My-Zsh&lt;br /&gt;
+Don’t get me wrong, bash is great and all, but the sheer power and user friendliness of a shell like zsh is amazing. Not to mention add ons like oh-my-zsh are just plain awesome.&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install zsh
+chsh -s /usr/bin/zsh
+sudo sh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After installing a few choice oh-my-sh plugins will turn this&lt;br /&gt;
+    &lt;img src=&quot;/thewickedaxe.github.io/images/gnm-term.jpg&quot; alt=&quot;Standard ubuntu&quot; /&gt;&lt;br /&gt;
+    &lt;br /&gt;Into this&lt;br /&gt;
+    &lt;img src=&quot;/thewickedaxe.github.io/images/agnoster.png&quot; alt=&quot;Agnoster&quot; /&gt;&lt;br /&gt;
+    As you can see the sheer density of useful info and fmt with full utf support baked into the term is something amazing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Check out &lt;a href=&quot;https://kkovacs.eu/cool-but-obscure-unix-tools&quot;&gt;Kristof Kovacs&lt;/a&gt; for more cool productivity tools&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Jan 2017 00:00:00 +0530</pubDate>
+        <link>http://thewickedaxe.github.io/thewickedaxe.github.io/2017/01/12/Getting-Ubuntu-set-up-just-the-way-I-like-it.html</link>
+        <guid isPermaLink="true">http://thewickedaxe.github.io/thewickedaxe.github.io/2017/01/12/Getting-Ubuntu-set-up-just-the-way-I-like-it.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>I Think Some Hackers Installed Some Viruses on My PC!</title>
@@ -39,9 +123,9 @@ Me: &quot;*disbelief brain seizure starts*&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/fi
 
 &lt;p&gt;People like this are the reason Nigerian prince scams work.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 22 Jun 2016 00:00:00 -0400</pubDate>
-        <link>http://thewickedaxe.github.io/2016/06/22/The-Complete-Absurdity-of-Baby-Boomer's-views-on-Technology.html</link>
-        <guid isPermaLink="true">http://thewickedaxe.github.io/2016/06/22/The-Complete-Absurdity-of-Baby-Boomer's-views-on-Technology.html</guid>
+        <pubDate>Wed, 22 Jun 2016 00:00:00 +0530</pubDate>
+        <link>http://thewickedaxe.github.io/thewickedaxe.github.io/2016/06/22/The-Complete-Absurdity-of-Baby-Boomer-views-on-Technology.html</link>
+        <guid isPermaLink="true">http://thewickedaxe.github.io/thewickedaxe.github.io/2016/06/22/The-Complete-Absurdity-of-Baby-Boomer-views-on-Technology.html</guid>
         
         
       </item>
